@@ -1,0 +1,130 @@
+{
+  "settings": {
+    "basis": "sto-3g",
+    "mapping": "jordan-wigner",
+    "nfock": 16,
+    "snap_depth": 4,
+    "ecd_depth": 9,
+    "optimizer": "BFGS",
+    "tol": 1e-08,
+    "maxiter": 400,
+    "methods": [
+      "ecd"
+    ],
+    "bonds": [
+      0.75,
+      2.45
+    ],
+    "energy": "exact Eq.28 Hamiltonian",
+    "encoding": "msb",
+    "encoding_scores": {
+      "lsb": 3.028320399844657,
+      "msb": 5.318966156409033e-09
+    }
+  },
+  "distances": [
+    0.75,
+    2.45
+  ],
+  "fci_paper": [
+    -1.13711707,
+    -0.93660526
+  ],
+  "fci_diag_gvec": [
+    -1.1371170673457307,
+    -0.936605256416193
+  ],
+  "hamiltonian_checks": [
+    {
+      "r": 0.75,
+      "pyscf_fci": -1.1371170673457316,
+      "paper_fci": -1.13711707,
+      "gvec_lsb": -1.1371170673457307,
+      "gvec_msb": -1.1371170673457307,
+      "openfermion_jw": -1.1371170673457303,
+      "gvec_lsb_vs_of": 3.110150312885166,
+      "gvec_msb_vs_of": 9.121412916732176e-16
+    },
+    {
+      "r": 2.45,
+      "pyscf_fci": -0.9366052564161927,
+      "paper_fci": -0.93660526,
+      "gvec_lsb": -0.936605256416193,
+      "gvec_msb": -0.936605256416193,
+      "openfermion_jw": -0.9366052564161929,
+      "gvec_lsb_vs_of": 0.237199955037069,
+      "gvec_msb_vs_of": 6.707437923744493e-16
+    }
+  ],
+  "paper_snap_published": [
+    -1.13711706,
+    -0.93660527
+  ],
+  "paper_ecd_lcu_published": [
+    -1.13711741,
+    -0.9366056
+  ],
+  "paper_ecd_exact_ev_published": [
+    -1.13711707,
+    -0.93660526
+  ],
+  "paper_snap_reeval_exact_H": [
+    -1.1371170673455073,
+    -0.9366052563928234
+  ],
+  "paper_ecd_reeval_exact_H": [
+    -1.1371170673355264,
+    -0.9366052563333878
+  ],
+  "occupations_075_lsb": {
+    "snap": [
+      0.013128764267474245,
+      0.013128764267340054,
+      0.9868712357326015,
+      0.9868712357325226
+    ],
+    "ecd": [
+      0.01312873311256596,
+      0.0131287331124137,
+      0.9868712668869952,
+      0.98687126688674
+    ]
+  },
+  "ecd_reopt_random": {
+    "kind": "ecd",
+    "continuation": false,
+    "seeds": {
+      "0": {
+        "energies": [
+          -1.1371170673457305,
+          -0.9366052564161929
+        ],
+        "records": [
+          {
+            "energy": -1.1371170673457305,
+            "nit": 117,
+            "nfev": 124,
+            "success": true,
+            "message": "Optimization terminated successfully.",
+            "seconds": 5.151285171508789,
+            "r": 0.75
+          },
+          {
+            "energy": -0.9366052564161929,
+            "nit": 284,
+            "nfev": 298,
+            "success": true,
+            "message": "Optimization terminated successfully.",
+            "seconds": 15.792864084243774,
+            "r": 2.45
+          }
+        ],
+        "best_vs_fci": 2.220446049250313e-16
+      }
+    },
+    "paper_params_exact_H": [
+      -1.1371170673355264,
+      -0.9366052563333878
+    ]
+  }
+}

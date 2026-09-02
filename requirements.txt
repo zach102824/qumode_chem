@@ -1,0 +1,6 @@
+numpy>=1.26
+scipy>=1.13
+matplotlib>=3.9
+openfermion>=1.6
+openfermionpyscf>=0.5
+pyscf>=2.6
