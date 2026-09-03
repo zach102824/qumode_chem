@@ -3,12 +3,14 @@
 from .hamiltonian import (
     NFOCK,
     N_QUBITS,
+    HYBRID_MODE_ORDER,
     PAPER_FCI,
     PAPER_GRID_A,
     PAPER_SNAP_ND20,
     fci_energy,
     h4_molecule,
     jw_hamiltonian,
+    jw_hamiltonian_hybrid,
     paper_reference,
 )
 from .hybrid import (
@@ -34,6 +36,7 @@ n_params = hybrid_n_params
 __all__ = [
     "NFOCK",
     "N_QUBITS",
+    "HYBRID_MODE_ORDER",
     "PAPER_FCI",
     "PAPER_GRID_A",
     "PAPER_SNAP_ND20",
@@ -41,6 +44,7 @@ __all__ = [
     "fci_energy",
     "h4_molecule",
     "jw_hamiltonian",
+    "jw_hamiltonian_hybrid",
     "paper_reference",
     "hybrid_energy",
     "hybrid_energy_and_grad",

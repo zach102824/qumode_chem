@@ -12,12 +12,20 @@ from __future__ import annotations
 import numpy as np
 from openfermion.chem import MolecularData
 from openfermion.linalg import get_sparse_operator
+from openfermion.ops import FermionOperator
 from openfermion.transforms import get_fermion_operator, jordan_wigner
 from openfermionpyscf import run_pyscf
 
 NFOCK = 16
 N_QUBITS = 8
 N_QUMODES = 2
+
+# The paper SNAP recreation keeps OpenFermion's interleaved spin-orbital order:
+# cavity 1 = spatial orbitals (0, 1), cavity 2 = spatial orbitals (2, 3).
+# The hybrid scan instead groups the frontier orbitals in cavity 2:
+# cavity 1 = spatial orbitals (0, 3), cavity 2 = spatial orbitals (1, 2).
+# Entries give the old OpenFermion mode at each new mode position.
+HYBRID_MODE_ORDER = (0, 1, 6, 7, 2, 3, 4, 5)
 
 # Published SNAP-VQE grid: arange(0.5, 2.6, 0.1) from h4mol_params.ipynb
 PAPER_GRID_A = np.arange(0.5, 2.6, 0.1)
@@ -74,6 +82,25 @@ def jw_hamiltonian(bond_a: float) -> np.ndarray:
     """
     mol = h4_molecule(bond_a)
     ham = jordan_wigner(get_fermion_operator(mol.get_molecular_hamiltonian()))
+    return np.asarray(get_sparse_operator(ham, n_qubits=N_QUBITS).todense())
+
+
+def jw_hamiltonian_hybrid(bond_a: float) -> np.ndarray:
+    """Exact JWT matrix with the hybrid scan's frontier-orbital grouping.
+
+    The fermionic modes are relabeled before Jordan--Wigner so that new modes
+    0..3 (cavity 1) contain spatial orbitals 0 and 3, while new modes 4..7
+    (cavity 2) contain spatial orbitals 1 (HOMO) and 2 (LUMO).  This is
+    unitarily equivalent to :func:`jw_hamiltonian` and has the same spectrum.
+    """
+    mol = h4_molecule(bond_a)
+    fermion_h = get_fermion_operator(mol.get_molecular_hamiltonian())
+    old_to_new = {old: new for new, old in enumerate(HYBRID_MODE_ORDER)}
+    reordered = FermionOperator()
+    for term, coefficient in fermion_h.terms.items():
+        new_term = tuple((old_to_new[mode], action) for mode, action in term)
+        reordered += FermionOperator(new_term, coefficient)
+    ham = jordan_wigner(reordered)
     return np.asarray(get_sparse_operator(ham, n_qubits=N_QUBITS).todense())
 
 
