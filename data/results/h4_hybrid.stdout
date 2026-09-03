@@ -1,0 +1,5 @@
+self-check ok (nfock=4, use_bs=True, worst FD rel err 0.00e+00)
+
+=== build H4 JWT Hamiltonian at R=0.88 Å ===
+=== r=0.88 Å equilibrium  FCI(pyscf)=-2.1804101685  eig=-2.1804101685  paper_fci=-2.18041017  paper_SNAP_D20=-2.1804101724879494 ===
+-- r=0.88  (ECD+SNAP+BS)^1 + ECD   npar=52 --
