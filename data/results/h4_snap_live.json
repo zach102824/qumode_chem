@@ -1,0 +1,15 @@
+{
+  "t": "2026-09-03T04:07:17",
+  "elapsed_s": 14466.318,
+  "iter": 630,
+  "maxiter": 2000,
+  "remaining": 1370,
+  "energy": -1.8721477651420981,
+  "nfev": 634,
+  "script": "h4_snap",
+  "r": 2.5,
+  "ndepth": 20,
+  "init": "random",
+  "seed": 0,
+  "n_params": 720
+}
