@@ -31,10 +31,11 @@ parameter** (no analytic hybrid gradient).
 | `--no-bs` | 5 | 2.50 | 218 | −1.8680356593 | 4.18 mHa | no | 206 | precision loss |
 | `--no-bs` | 8 | 2.50 | 344 | −1.8695840089 | 2.63 mHa | no | 2000 | maxiter |
 | `--no-bs` | 10 | 2.50 | 428 | −1.8700674554 | 2.15 mHa | no | 2000 | maxiter |
+| `--no-bs` | 11 | 2.50 | 470 | −1.8707181351 | 1.50 mHa | **yes** | 2000 | maxiter |
 
 `--use-bs` L=5 at R=2.50 was cancelled mid-run (last live ≈ iter 448,
 E≈−1.7787, \|E−FCI\|≈93.5 mHa). Further hybrid work is **`--no-bs` only**.
-At R=2.50 even L=8/10 stayed above chemical accuracy (1.6 mHa).
+At R=2.50, L=8/10 stayed above chemical accuracy; L=11 reached 1.50 mHa (chem yes).
 
 Matched-iter snapshot at R=0.88, L=5:
 
