@@ -30,3 +30,16 @@ python3 scripts/plot_h2_results.py
 ```
 
 Outputs: `data/results/h2_verify.json`, `data/results/h2_multistart.json`, `figures/`.
+
+## Hybrid ECD+SNAP (`--no-bs`) H4 results
+
+Both bond lengths are on `main` under `data/results/`:
+
+| Bond | Files | Chem-acc layer |
+|------|-------|----------------|
+| R=0.88 Å | `h4_hybrid_L{5,8,10}_nobs*` / `*_r088*` | L=8 (344 params), L=10 |
+| R=2.50 Å | `h4_hybrid_L{5,8,10,11}_nobs_r250*` | L=11 (470 params) |
+
+Index: [`data/results/h4_hybrid_nobs_summary.json`](data/results/h4_hybrid_nobs_summary.json)  
+Writeup: [`docs/hybrid_bs_vs_nobs.md`](docs/hybrid_bs_vs_nobs.md)
+
