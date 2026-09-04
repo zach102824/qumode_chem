@@ -1,0 +1,35 @@
+self-check ok (nfock=4, use_bs=False, worst FD rel err 0.00e+00)
+
+=== build H4 JWT Hamiltonian at R=0.88 Å ===
+=== r=0.88 Å equilibrium  FCI(pyscf)=-2.1804101685  eig=-2.1804101685  paper_fci=-2.18041017  paper_SNAP_D20=-2.1804101724879494 ===
+-- r=0.88  (ECD+SNAP)^1 + ECD   npar=50 --
+    seed=0 E=-1.4741878662 dE=+7.062e-01 nit=100 ok=False t=237.9s
+  r=0.88  L=1   npar=50    E=-1.4741878662  |E-FCI|=7.062e-01  FCI=no   chem=no
+-- r=0.88  (ECD+SNAP)^2 + ECD   npar=92 --
+    seed=0 E=-2.1569043643 dE=+2.351e-02 nit=1578 ok=False t=4441.8s
+  r=0.88  L=2   npar=92    E=-2.1569043643  |E-FCI|=2.351e-02  FCI=no   chem=no
+-- r=0.88  (ECD+SNAP)^3 + ECD   npar=134 --
+    seed=0 E=-2.1656633691 dE=+1.475e-02 nit=1923 ok=False t=7634.3s
+  r=0.88  L=3   npar=134   E=-2.1656633691  |E-FCI|=1.475e-02  FCI=no   chem=no
+-- r=0.88  (ECD+SNAP)^4 + ECD   npar=176 --
+    seed=0 E=-2.1702447015 dE=+1.017e-02 nit=2000 ok=False t=9948.8s
+  r=0.88  L=4   npar=176   E=-2.1702447015  |E-FCI|=1.017e-02  FCI=no   chem=no
+-- r=0.88  (ECD+SNAP)^5 + ECD   npar=218 --
+    seed=0 E=-2.1735180587 dE=+6.892e-03 nit=1598 ok=False t=9953.6s
+  r=0.88  L=5   npar=218   E=-2.1735180587  |E-FCI|=6.892e-03  FCI=no   chem=no
+-- r=0.88  (ECD+SNAP)^6 + ECD   npar=260 --
+    seed=0 E=-2.1770997609 dE=+3.310e-03 nit=2000 ok=False t=14112.9s
+  r=0.88  L=6   npar=260   E=-2.1770997609  |E-FCI|=3.310e-03  FCI=no   chem=no
+-- r=0.88  (ECD+SNAP)^7 + ECD   npar=302 --
+    seed=0 E=-2.1787496511 dE=+1.661e-03 nit=2000 ok=False t=16439.6s
+  r=0.88  L=7   npar=302   E=-2.1787496511  |E-FCI|=1.661e-03  FCI=no   chem=no
+-- r=0.88  (ECD+SNAP)^8 + ECD   npar=344 --
+    seed=0 E=-2.1799514343 dE=+4.587e-04 nit=2000 ok=False t=18590.4s
+  r=0.88  L=8   npar=344   E=-2.1799514343  |E-FCI|=4.587e-04  FCI=no   chem=yes
+-- r=0.88  (ECD+SNAP)^9 + ECD   npar=386 --
+    seed=0 E=-2.1799386389 dE=+4.715e-04 nit=1006 ok=False t=11481.4s
+  r=0.88  L=9   npar=386   E=-2.1799386389  |E-FCI|=4.715e-04  FCI=no   chem=yes
+-- r=0.88  (ECD+SNAP)^10 + ECD   npar=428 --
+    seed=0 E=-2.1802401589 dE=+1.700e-04 nit=2000 ok=False t=25545.8s
+  r=0.88  L=10  npar=428   E=-2.1802401589  |E-FCI|=1.700e-04  FCI=no   chem=yes
+-- r=0.88  (ECD+SNAP)^11 + ECD   npar=470 --
