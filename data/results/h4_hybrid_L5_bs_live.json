@@ -1,0 +1,15 @@
+{
+  "t": "2026-09-04T02:29:49",
+  "elapsed_s": 29274.984563827515,
+  "iter": 448,
+  "maxiter": 2000,
+  "remaining": 1552,
+  "energy": -1.7787315938318824,
+  "nfev": 452,
+  "script": "h4_hybrid",
+  "r": 2.5,
+  "n_layers": 5,
+  "seed": 0,
+  "n_params": 228,
+  "use_bs": true
+}

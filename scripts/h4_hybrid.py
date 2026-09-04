@@ -63,15 +63,80 @@ BONDS_DEFAULT = [0.88, 2.50]
 LABELS = {0.88: "equilibrium", 2.50: "stretched"}
 
 
-def _optimize(x0: np.ndarray, fun_and_grad, maxiter: int, tol: float) -> dict:
+def _write_iter(rec: dict, live_path: Path, iters_path: Path, append: bool) -> None:
+    live_path.parent.mkdir(parents=True, exist_ok=True)
+    live_path.write_text(json.dumps(rec, indent=2))
+    if append:
+        with iters_path.open("a") as f:
+            f.write(json.dumps(rec) + "\n")
+
+
+def _optimize(
+    x0: np.ndarray,
+    fun_and_grad,
+    maxiter: int,
+    tol: float,
+    log_ctx: dict | None = None,
+) -> dict:
     t0 = time.time()
+    state = {"nfev": 0, "iter": 0, "energy": None}
+
+    def fun(x):
+        e, g = fun_and_grad(x)
+        state["nfev"] += 1
+        state["energy"] = float(e)
+        return e, g
+
+    def _record(nit: int, done: bool = False, success=None, message=None, append: bool = True):
+        energy = state["energy"]
+        if energy is None:
+            return
+        rec = {
+            "t": time.strftime("%Y-%m-%dT%H:%M:%S"),
+            "elapsed_s": time.time() - t0,
+            "iter": nit,
+            "maxiter": maxiter,
+            "remaining": max(0, maxiter - nit),
+            "energy": energy,
+            "nfev": state["nfev"],
+        }
+        if log_ctx:
+            rec.update({k: v for k, v in log_ctx.items() if k not in ("live_path", "iters_path")})
+        if done:
+            rec["done"] = True
+            rec["success"] = success
+            rec["message"] = message
+        print(
+            f"    iter={nit} E={energy:.10f} nfev={state['nfev']} "
+            f"t={time.time() - t0:.1f}s remaining={max(0, maxiter - nit)}",
+            flush=True,
+        )
+        if log_ctx:
+            _write_iter(rec, Path(log_ctx["live_path"]), Path(log_ctx["iters_path"]), append)
+
+    def cb(_xk):
+        state["iter"] += 1
+        _record(state["iter"])
+
     res = sciopt.minimize(
-        lambda x: fun_and_grad(x),
+        fun,
         x0,
         method="BFGS",
         jac=True,
         tol=tol,
+        callback=cb,
         options={"maxiter": maxiter, "disp": False},
+    )
+    # refresh live.json with optimizer outcome; skip jsonl if this nit was already logged
+    already = state["iter"] == int(res.nit) and int(res.nit) > 0
+    state["energy"] = float(res.fun)
+    state["nfev"] = int(res.nfev)
+    _record(
+        int(res.nit),
+        done=True,
+        success=bool(res.success),
+        message=str(res.message),
+        append=not already,
     )
     return {
         "energy": float(res.fun),
@@ -168,6 +233,8 @@ def run_geometry(
     result_geo: dict,
     out_path: Path,
     full_result: dict,
+    live_path: Path,
+    iters_path: Path,
 ) -> None:
     prev_best_x: dict[int, np.ndarray] = {}
     layer_name = "ECD+SNAP+BS" if use_bs else "ECD+SNAP"
@@ -183,6 +250,16 @@ def run_geometry(
                 )
             else:
                 x0 = hybrid_random_params(n_layers, nfock, rng, use_bs)
+            log_ctx = {
+                "script": "h4_hybrid",
+                "r": float(r),
+                "n_layers": int(n_layers),
+                "seed": int(seed),
+                "n_params": int(npar),
+                "use_bs": bool(use_bs),
+                "live_path": str(live_path),
+                "iters_path": str(iters_path),
+            }
             res = _optimize(
                 x0,
                 lambda x, hh=h, nl=n_layers: _safe_fun(
@@ -190,6 +267,7 @@ def run_geometry(
                 ),
                 maxiter,
                 tol,
+                log_ctx=log_ctx,
             )
             rec = _trial_record(res, e_fci, seed)
             trials.append(rec)
@@ -262,6 +340,13 @@ def main() -> None:
 
     if not args.skip_check:
         self_check(nfock=4, use_bs=args.use_bs)
+
+    live_path = args.out.with_name(args.out.stem + "_live.json")
+    iters_path = args.out.with_name(args.out.stem + "_iters.jsonl")
+    if iters_path.exists():
+        iters_path.unlink()
+    print(f"per-iter log: {iters_path}", flush=True)
+    print(f"live snapshot: {live_path}", flush=True)
 
     layers = range(args.layers_min, args.layers_max + 1)
     result = {
@@ -339,6 +424,8 @@ def main() -> None:
             geo,
             args.out,
             result,
+            live_path,
+            iters_path,
         )
 
     print("\n=== summary (best seed per layer) ===", flush=True)
