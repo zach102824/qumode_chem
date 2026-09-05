@@ -1,0 +1,26 @@
+self-check ok (nfock=4, use_bs=True, worst FD rel err 0.00e+00)
+
+=== build H4 JWT Hamiltonian at R=0.88 Å ===
+=== r=0.88 Å equilibrium  FCI(pyscf)=-2.1804101685  eig=-2.1804101685  paper_fci=-2.18041017  paper_SNAP_D20=-2.1804101724879494 ===
+-- r=0.88  (ECD+SNAP+BS)^1 + ECD   npar=52 --
+    seed=0 E=-1.3386116546 dE=+8.418e-01 nit=335 ok=False t=1679.2s
+  r=0.88  L=1   npar=52    E=-1.3386116546  |E-FCI|=8.418e-01  FCI=no   chem=no
+-- r=0.88  (ECD+SNAP+BS)^2 + ECD   npar=96 --
+    seed=0 E=-1.6625221899 dE=+5.179e-01 nit=252 ok=False t=3406.3s
+  r=0.88  L=2   npar=96    E=-1.6625221899  |E-FCI|=5.179e-01  FCI=no   chem=no
+-- r=0.88  (ECD+SNAP+BS)^3 + ECD   npar=140 --
+    seed=0 E=-1.5264882539 dE=+6.539e-01 nit=421 ok=False t=9145.7s
+  r=0.88  L=3   npar=140   E=-1.5264882539  |E-FCI|=6.539e-01  FCI=no   chem=no
+-- r=0.88  (ECD+SNAP+BS)^4 + ECD   npar=184 --
+    seed=0 E=-1.8218543519 dE=+3.586e-01 nit=861 ok=False t=33394.4s
+  r=0.88  L=4   npar=184   E=-1.8218543519  |E-FCI|=3.586e-01  FCI=no   chem=no
+-- r=0.88  (ECD+SNAP+BS)^5 + ECD   npar=228 --
+    seed=0 E=-1.8738154158 dE=+3.066e-01 nit=504 ok=False t=28368.2s
+  r=0.88  L=5   npar=228   E=-1.8738154158  |E-FCI|=3.066e-01  FCI=no   chem=no
+-- r=0.88  (ECD+SNAP+BS)^6 + ECD   npar=272 --
+    seed=0 E=-1.9988358918 dE=+1.816e-01 nit=539 ok=False t=45257.2s
+  r=0.88  L=6   npar=272   E=-1.9988358918  |E-FCI|=1.816e-01  FCI=no   chem=no
+-- r=0.88  (ECD+SNAP+BS)^7 + ECD   npar=316 --
+    seed=0 E=-2.0483628374 dE=+1.320e-01 nit=563 ok=False t=67325.6s
+  r=0.88  L=7   npar=316   E=-2.0483628374  |E-FCI|=1.320e-01  FCI=no   chem=no
+-- r=0.88  (ECD+SNAP+BS)^8 + ECD   npar=360 --
