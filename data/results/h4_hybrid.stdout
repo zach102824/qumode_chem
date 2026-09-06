@@ -24,3 +24,6 @@ self-check ok (nfock=4, use_bs=True, worst FD rel err 0.00e+00)
     seed=0 E=-2.0483628374 dE=+1.320e-01 nit=563 ok=False t=67325.6s
   r=0.88  L=7   npar=316   E=-2.0483628374  |E-FCI|=1.320e-01  FCI=no   chem=no
 -- r=0.88  (ECD+SNAP+BS)^8 + ECD   npar=360 --
+    seed=0 E=-2.1195693713 dE=+6.084e-02 nit=685 ok=False t=94870.8s
+  r=0.88  L=8   npar=360   E=-2.1195693713  |E-FCI|=6.084e-02  FCI=no   chem=no
+-- r=0.88  (ECD+SNAP+BS)^9 + ECD   npar=404 --
