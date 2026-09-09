@@ -1,0 +1,275 @@
+{
+  "results": {
+    "0.88:10": {
+      "r": 0.88,
+      "L": 10,
+      "chem": true,
+      "err": 0.00014569748661896753,
+      "energy": -2.18026447104244,
+      "nit": 2000,
+      "path": "/workspace/qumode_chem/data/results/h4_hybrid_L10_nobs_r088.json"
+    },
+    "2.50:8": {
+      "r": 2.5,
+      "L": 8,
+      "chem": false,
+      "err": 0.0026319855695990935,
+      "energy": -1.869584008854518,
+      "nit": 2000,
+      "path": "/workspace/qumode_chem/data/results/h4_hybrid_L8_nobs_r250.json"
+    },
+    "2.50:5": {
+      "r": 2.5,
+      "L": 5,
+      "chem": false,
+      "err": 0.00418033514933569,
+      "energy": -1.8680356592747756,
+      "nit": 206,
+      "path": "/workspace/qumode_chem/data/results/h4_hybrid_L5_nobs_r250.json"
+    },
+    "0.50:11": {
+      "r": 0.5,
+      "L": 11,
+      "chem": true,
+      "err": 9.250941345273489e-05,
+      "energy": -1.653024442526671,
+      "nit": 1830,
+      "path": "/workspace/qumode_chem/data/results/h4_hybrid_L11_nobs_r0050.json"
+    },
+    "0.88:5": {
+      "r": 0.88,
+      "L": 5,
+      "chem": false,
+      "err": 0.006076274075701882,
+      "energy": -2.17433389445336,
+      "nit": 2000,
+      "path": "/workspace/qumode_chem/data/results/h4_hybrid_L5_nobs.json"
+    },
+    "2.50:10": {
+      "r": 2.5,
+      "L": 10,
+      "chem": false,
+      "err": 0.002148539064407151,
+      "energy": -1.8700674553597096,
+      "nit": 2000,
+      "path": "/workspace/qumode_chem/data/results/h4_hybrid_L10_nobs_r250.json"
+    },
+    "0.88:8": {
+      "r": 0.88,
+      "L": 8,
+      "chem": true,
+      "err": 0.00042445171485194777,
+      "energy": -2.17998571681421,
+      "nit": 2000,
+      "path": "/workspace/qumode_chem/data/results/h4_hybrid_L8_nobs_r088.json"
+    },
+    "2.50:11": {
+      "r": 2.5,
+      "L": 11,
+      "chem": true,
+      "err": 0.0014978593226804282,
+      "energy": -1.8707181351014357,
+      "nit": 2000,
+      "path": "/workspace/qumode_chem/data/results/h4_hybrid_L11_nobs_r250.json"
+    },
+    "1.50:11": {
+      "r": 1.5,
+      "L": 11,
+      "chem": true,
+      "err": 0.00032897186475189244,
+      "energy": -1.995821353654054,
+      "nit": 2000,
+      "path": "/workspace/qumode_chem/data/results/h4_hybrid_L11_nobs_r0150.json"
+    },
+    "2.00:11": {
+      "r": 2.0,
+      "L": 11,
+      "chem": true,
+      "err": 0.0014540662863868903,
+      "energy": -1.8963265797034863,
+      "nit": 2000,
+      "path": "/workspace/qumode_chem/data/results/h4_hybrid_L11_nobs_r0200.json"
+    },
+    "0.50:10": {
+      "r": 0.5,
+      "L": 10,
+      "chem": true,
+      "err": 0.00010142094753717856,
+      "energy": -1.6530155309925854,
+      "nit": 1999,
+      "path": "/workspace/qumode_chem/data/results/h4_hybrid_L10_nobs_r0050.json"
+    },
+    "0.50:9": {
+      "r": 0.5,
+      "L": 9,
+      "chem": true,
+      "err": 0.00031095909740952443,
+      "energy": -1.652805992842712,
+      "nit": 1681,
+      "path": "/workspace/qumode_chem/data/results/h4_hybrid_L9_nobs_r0050.json"
+    },
+    "0.50:8": {
+      "r": 0.5,
+      "L": 8,
+      "chem": true,
+      "err": 0.0003945401076315136,
+      "energy": -1.6527224118324952,
+      "nit": 2000,
+      "path": "/workspace/qumode_chem/data/results/h4_hybrid_L8_nobs_r0050.json"
+    },
+    "0.50:7": {
+      "r": 0.5,
+      "L": 7,
+      "chem": true,
+      "err": 0.0006512616153393491,
+      "energy": -1.652465690324779,
+      "nit": 1985,
+      "path": "/workspace/qumode_chem/data/results/h4_hybrid_L7_nobs_r0050.json"
+    },
+    "0.50:6": {
+      "r": 0.5,
+      "L": 6,
+      "chem": false,
+      "err": 0.0016518255033362017,
+      "energy": -1.6514651264367881,
+      "nit": 2000,
+      "path": "/workspace/qumode_chem/data/results/h4_hybrid_L6_nobs_r0050.json"
+    },
+    "0.88:6": {
+      "r": 0.88,
+      "L": 6,
+      "chem": false,
+      "err": 0.0025680009141604287,
+      "energy": -2.1778421676149025,
+      "nit": 2000,
+      "path": "/workspace/qumode_chem/data/results/h4_hybrid_L6_nobs_r0088.json"
+    },
+    "0.88:7": {
+      "r": 0.88,
+      "L": 7,
+      "chem": true,
+      "err": 0.001538207261077229,
+      "energy": -2.1788719612679914,
+      "nit": 2000,
+      "path": "/workspace/qumode_chem/data/results/h4_hybrid_L7_nobs_r0088.json"
+    },
+    "1.50:10": {
+      "r": 1.5,
+      "L": 10,
+      "chem": true,
+      "err": 0.0006953200167596485,
+      "energy": -1.9954550055020484,
+      "nit": 2000,
+      "path": "/workspace/qumode_chem/data/results/h4_hybrid_L10_nobs_r0150.json"
+    },
+    "1.50:9": {
+      "r": 1.5,
+      "L": 9,
+      "chem": true,
+      "err": 0.0012969933532989142,
+      "energy": -1.994853332165505,
+      "nit": 2000,
+      "path": "/workspace/qumode_chem/data/results/h4_hybrid_L9_nobs_r0150.json"
+    },
+    "1.50:8": {
+      "r": 1.5,
+      "L": 8,
+      "chem": false,
+      "err": 0.0025174610986606893,
+      "energy": -1.9936328644201478,
+      "nit": 2000,
+      "path": "/workspace/qumode_chem/data/results/h4_hybrid_L8_nobs_r0150.json"
+    },
+    "2.00:10": {
+      "r": 2.0,
+      "L": 10,
+      "chem": false,
+      "err": 0.004396262412659668,
+      "energy": -1.8933843835772164,
+      "nit": 2000,
+      "path": "/workspace/qumode_chem/data/results/h4_hybrid_L10_nobs_r0200.json"
+    },
+    "0.70:11": {
+      "r": 0.7,
+      "L": 11,
+      "chem": true,
+      "err": 0.00011202963576950609,
+      "energy": -2.1068848854595177,
+      "nit": 1225,
+      "path": "/workspace/qumode_chem/data/results/h4_hybrid_L11_nobs_r0070.json"
+    },
+    "0.70:10": {
+      "r": 0.7,
+      "L": 10,
+      "chem": true,
+      "err": 0.00015223964549315738,
+      "energy": -2.1068446754497927,
+      "nit": 2000,
+      "path": "/workspace/qumode_chem/data/results/h4_hybrid_L10_nobs_r0070.json"
+    },
+    "0.70:9": {
+      "r": 0.7,
+      "L": 9,
+      "chem": true,
+      "err": 0.0002545877110069483,
+      "energy": -2.1067423273842762,
+      "nit": 2000,
+      "path": "/workspace/qumode_chem/data/results/h4_hybrid_L9_nobs_r0070.json"
+    },
+    "0.70:8": {
+      "r": 0.7,
+      "L": 8,
+      "chem": true,
+      "err": 0.00024072357943127898,
+      "energy": -2.1067561915158617,
+      "nit": 2000,
+      "path": "/workspace/qumode_chem/data/results/h4_hybrid_L8_nobs_r0070.json"
+    },
+    "0.70:7": {
+      "r": 0.7,
+      "L": 7,
+      "chem": true,
+      "err": 0.0012108894981315288,
+      "energy": -2.1057860255971543,
+      "nit": 2000,
+      "path": "/workspace/qumode_chem/data/results/h4_hybrid_L7_nobs_r0070.json"
+    },
+    "0.70:6": {
+      "r": 0.7,
+      "L": 6,
+      "chem": false,
+      "err": 0.0017821236035087118,
+      "energy": -2.1052147914917803,
+      "nit": 2000,
+      "path": "/workspace/qumode_chem/data/results/h4_hybrid_L6_nobs_r0070.json"
+    },
+    "1.00:11": {
+      "r": 1.0,
+      "L": 11,
+      "chem": true,
+      "err": 0.00011463560933266947,
+      "energy": -2.1662728130254334,
+      "nit": 2000,
+      "path": "/workspace/qumode_chem/data/results/h4_hybrid_L11_nobs_r0100.json"
+    },
+    "1.00:10": {
+      "r": 1.0,
+      "L": 10,
+      "chem": true,
+      "err": 0.00031628649374981777,
+      "energy": -2.1660711621410096,
+      "nit": 2000,
+      "path": "/workspace/qumode_chem/data/results/h4_hybrid_L10_nobs_r0100.json"
+    },
+    "1.00:9": {
+      "r": 1.0,
+      "L": 9,
+      "chem": true,
+      "err": 0.0004508339915325621,
+      "energy": -2.1659366146432286,
+      "nit": 2000,
+      "path": "/workspace/qumode_chem/data/results/h4_hybrid_L9_nobs_r0100.json"
+    }
+  },
+  "notes": []
+}

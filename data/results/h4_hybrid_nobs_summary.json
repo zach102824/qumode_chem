@@ -4,19 +4,249 @@
   "nfock": 16,
   "chemical_acc_ha": 0.0016,
   "fci": {
-    "0.88": -2.1804101685,
-    "2.50": -1.8722159944
+    "0.50": -1.653116951940114,
+    "0.70": -2.106996915095285,
+    "0.88": -2.180410168529067,
+    "1.00": -2.166387448634759,
+    "1.50": -1.9961503255188098,
+    "2.00": -1.8977806459898727,
+    "2.50": -1.872215994424113
   },
-  "note": "Consolidated index of finished --no-bs runs. Per-bond detail lives in the source_file paths (r088 = R=0.88, r250 = R=2.50).",
+  "note": "Consolidated index of finished --no-bs runs after nobs_until_11am planner (deadline 2026-09-09 11:00 Asia/Shanghai). Per-bond detail in source_file paths. R=1.00 min chem L=9 is an upper bound (L=8 not attempted before cutoff).",
+  "planner": {
+    "deadline": "2026-09-09T11:00:00+08:00",
+    "exit": "2026-09-09T11:30:13+08:00",
+    "status_file": "data/results/nobs_until_11am.status",
+    "state_file": "data/results/nobs_until_11am.state.json",
+    "min_chem_L": {
+      "0.50": {
+        "min_chem_L": 7,
+        "max_fail_L": 6,
+        "resolved": true
+      },
+      "0.70": {
+        "min_chem_L": 7,
+        "max_fail_L": 6,
+        "resolved": true
+      },
+      "0.88": {
+        "min_chem_L": 7,
+        "max_fail_L": 6,
+        "resolved": true
+      },
+      "1.00": {
+        "min_chem_L": 9,
+        "max_fail_L": null,
+        "resolved": false,
+        "note": "L=9 chem; L<=8 not run (launch cutoff)"
+      },
+      "1.50": {
+        "min_chem_L": 9,
+        "max_fail_L": 8,
+        "resolved": true
+      },
+      "2.00": {
+        "min_chem_L": 11,
+        "max_fail_L": 10,
+        "resolved": true
+      },
+      "2.50": {
+        "min_chem_L": 11,
+        "max_fail_L": 10,
+        "resolved": true
+      }
+    }
+  },
   "geometries": {
+    "0.50": {
+      "layers": {
+        "10": {
+          "source_file": "data/results/h4_hybrid_L10_nobs_r0050.json",
+          "n_params": 428,
+          "best_energy": -1.6530155309925854,
+          "best_abs_error": 0.00010142094753717856,
+          "chemical_acc": true,
+          "nit": 1999,
+          "success": false,
+          "message": "Desired error not necessarily achieved due to precision loss.",
+          "use_bs": false
+        },
+        "11": {
+          "source_file": "data/results/h4_hybrid_L11_nobs_r0050.json",
+          "n_params": 470,
+          "best_energy": -1.653024442526671,
+          "best_abs_error": 9.250941345273489e-05,
+          "chemical_acc": true,
+          "nit": 1830,
+          "success": false,
+          "message": "Desired error not necessarily achieved due to precision loss.",
+          "use_bs": false
+        },
+        "6": {
+          "source_file": "data/results/h4_hybrid_L6_nobs_r0050.json",
+          "n_params": 260,
+          "best_energy": -1.6514651264367881,
+          "best_abs_error": 0.0016518255033362017,
+          "chemical_acc": false,
+          "nit": 2000,
+          "success": false,
+          "message": "Maximum number of iterations has been exceeded.",
+          "use_bs": false
+        },
+        "7": {
+          "source_file": "data/results/h4_hybrid_L7_nobs_r0050.json",
+          "n_params": 302,
+          "best_energy": -1.652465690324779,
+          "best_abs_error": 0.0006512616153393491,
+          "chemical_acc": true,
+          "nit": 1985,
+          "success": false,
+          "message": "Desired error not necessarily achieved due to precision loss.",
+          "use_bs": false
+        },
+        "8": {
+          "source_file": "data/results/h4_hybrid_L8_nobs_r0050.json",
+          "n_params": 344,
+          "best_energy": -1.6527224118324952,
+          "best_abs_error": 0.0003945401076315136,
+          "chemical_acc": true,
+          "nit": 2000,
+          "success": false,
+          "message": "Maximum number of iterations has been exceeded.",
+          "use_bs": false
+        },
+        "9": {
+          "source_file": "data/results/h4_hybrid_L9_nobs_r0050.json",
+          "n_params": 386,
+          "best_energy": -1.652805992842712,
+          "best_abs_error": 0.00031095909740952443,
+          "chemical_acc": true,
+          "nit": 1681,
+          "success": false,
+          "message": "Desired error not necessarily achieved due to precision loss.",
+          "use_bs": false
+        }
+      },
+      "min_chem_L": 7,
+      "max_fail_L": 6,
+      "min_chem_resolved": true,
+      "min_chem_err_mHa": 0.6512616153393491
+    },
+    "0.70": {
+      "layers": {
+        "10": {
+          "source_file": "data/results/h4_hybrid_L10_nobs_r0070.json",
+          "n_params": 428,
+          "best_energy": -2.1068446754497927,
+          "best_abs_error": 0.00015223964549315738,
+          "chemical_acc": true,
+          "nit": 2000,
+          "success": false,
+          "message": "Maximum number of iterations has been exceeded.",
+          "use_bs": false
+        },
+        "11": {
+          "source_file": "data/results/h4_hybrid_L11_nobs_r0070.json",
+          "n_params": 470,
+          "best_energy": -2.1068848854595177,
+          "best_abs_error": 0.00011202963576950609,
+          "chemical_acc": true,
+          "nit": 1225,
+          "success": false,
+          "message": "Desired error not necessarily achieved due to precision loss.",
+          "use_bs": false
+        },
+        "6": {
+          "source_file": "data/results/h4_hybrid_L6_nobs_r0070.json",
+          "n_params": 260,
+          "best_energy": -2.1052147914917803,
+          "best_abs_error": 0.0017821236035087118,
+          "chemical_acc": false,
+          "nit": 2000,
+          "success": false,
+          "message": "Maximum number of iterations has been exceeded.",
+          "use_bs": false
+        },
+        "7": {
+          "source_file": "data/results/h4_hybrid_L7_nobs_r0070.json",
+          "n_params": 302,
+          "best_energy": -2.1057860255971543,
+          "best_abs_error": 0.0012108894981315288,
+          "chemical_acc": true,
+          "nit": 2000,
+          "success": false,
+          "message": "Maximum number of iterations has been exceeded.",
+          "use_bs": false
+        },
+        "8": {
+          "source_file": "data/results/h4_hybrid_L8_nobs_r0070.json",
+          "n_params": 344,
+          "best_energy": -2.1067561915158617,
+          "best_abs_error": 0.00024072357943127898,
+          "chemical_acc": true,
+          "nit": 2000,
+          "success": false,
+          "message": "Maximum number of iterations has been exceeded.",
+          "use_bs": false
+        },
+        "9": {
+          "source_file": "data/results/h4_hybrid_L9_nobs_r0070.json",
+          "n_params": 386,
+          "best_energy": -2.1067423273842762,
+          "best_abs_error": 0.0002545877110069483,
+          "chemical_acc": true,
+          "nit": 2000,
+          "success": false,
+          "message": "Maximum number of iterations has been exceeded.",
+          "use_bs": false
+        }
+      },
+      "min_chem_L": 7,
+      "max_fail_L": 6,
+      "min_chem_resolved": true,
+      "min_chem_err_mHa": 1.2108894981315288
+    },
     "0.88": {
       "layers": {
+        "10": {
+          "source_file": "data/results/h4_hybrid_L10_nobs_r088.json",
+          "n_params": 428,
+          "best_energy": -2.18026447104244,
+          "best_abs_error": 0.00014569748661896753,
+          "chemical_acc": true,
+          "nit": 2000,
+          "success": false,
+          "message": "Maximum number of iterations has been exceeded.",
+          "use_bs": false
+        },
         "5": {
           "source_file": "data/results/h4_hybrid_L5_nobs.json",
           "n_params": 218,
           "best_energy": -2.17433389445336,
           "best_abs_error": 0.006076274075701882,
           "chemical_acc": false,
+          "nit": 2000,
+          "success": false,
+          "message": "Maximum number of iterations has been exceeded.",
+          "use_bs": false
+        },
+        "6": {
+          "source_file": "data/results/h4_hybrid_L6_nobs_r0088.json",
+          "n_params": 260,
+          "best_energy": -2.1778421676149025,
+          "best_abs_error": 0.0025680009141604287,
+          "chemical_acc": false,
+          "nit": 2000,
+          "success": false,
+          "message": "Maximum number of iterations has been exceeded.",
+          "use_bs": false
+        },
+        "7": {
+          "source_file": "data/results/h4_hybrid_L7_nobs_r0088.json",
+          "n_params": 302,
+          "best_energy": -2.1788719612679914,
+          "best_abs_error": 0.001538207261077229,
+          "chemical_acc": true,
           "nit": 2000,
           "success": false,
           "message": "Maximum number of iterations has been exceeded.",
@@ -32,44 +262,139 @@
           "success": false,
           "message": "Maximum number of iterations has been exceeded.",
           "use_bs": false
-        },
+        }
+      },
+      "min_chem_L": 7,
+      "max_fail_L": 6,
+      "min_chem_resolved": true,
+      "min_chem_err_mHa": 1.538207261077229
+    },
+    "1.00": {
+      "layers": {
         "10": {
-          "source_file": "data/results/h4_hybrid_L10_nobs_r088.json",
+          "source_file": "data/results/h4_hybrid_L10_nobs_r0100.json",
           "n_params": 428,
-          "best_energy": -2.18026447104244,
-          "best_abs_error": 0.00014569748661896753,
+          "best_energy": -2.1660711621410096,
+          "best_abs_error": 0.00031628649374981777,
+          "chemical_acc": true,
+          "nit": 2000,
+          "success": false,
+          "message": "Maximum number of iterations has been exceeded.",
+          "use_bs": false
+        },
+        "11": {
+          "source_file": "data/results/h4_hybrid_L11_nobs_r0100.json",
+          "n_params": 470,
+          "best_energy": -2.1662728130254334,
+          "best_abs_error": 0.00011463560933266947,
+          "chemical_acc": true,
+          "nit": 2000,
+          "success": false,
+          "message": "Maximum number of iterations has been exceeded.",
+          "use_bs": false
+        },
+        "9": {
+          "source_file": "data/results/h4_hybrid_L9_nobs_r0100.json",
+          "n_params": 386,
+          "best_energy": -2.1659366146432286,
+          "best_abs_error": 0.0004508339915325621,
           "chemical_acc": true,
           "nit": 2000,
           "success": false,
           "message": "Maximum number of iterations has been exceeded.",
           "use_bs": false
         }
-      }
+      },
+      "min_chem_L": 9,
+      "max_fail_L": null,
+      "min_chem_resolved": false,
+      "min_chem_note": "L=9 chem; L<=8 not run (launch cutoff)",
+      "min_chem_err_mHa": 0.4508339915325621
     },
-    "2.50": {
+    "1.50": {
       "layers": {
-        "5": {
-          "source_file": "data/results/h4_hybrid_L5_nobs_r250.json",
-          "n_params": 218,
-          "best_energy": -1.8680356592747756,
-          "best_abs_error": 0.00418033514933569,
-          "chemical_acc": false,
-          "nit": 206,
+        "10": {
+          "source_file": "data/results/h4_hybrid_L10_nobs_r0150.json",
+          "n_params": 428,
+          "best_energy": -1.9954550055020484,
+          "best_abs_error": 0.0006953200167596485,
+          "chemical_acc": true,
+          "nit": 2000,
           "success": false,
-          "message": "Desired error not necessarily achieved due to precision loss.",
+          "message": "Maximum number of iterations has been exceeded.",
+          "use_bs": false
+        },
+        "11": {
+          "source_file": "data/results/h4_hybrid_L11_nobs_r0150.json",
+          "n_params": 470,
+          "best_energy": -1.995821353654054,
+          "best_abs_error": 0.00032897186475189244,
+          "chemical_acc": true,
+          "nit": 2000,
+          "success": false,
+          "message": "Maximum number of iterations has been exceeded.",
           "use_bs": false
         },
         "8": {
-          "source_file": "data/results/h4_hybrid_L8_nobs_r250.json",
+          "source_file": "data/results/h4_hybrid_L8_nobs_r0150.json",
           "n_params": 344,
-          "best_energy": -1.869584008854518,
-          "best_abs_error": 0.0026319855695990935,
+          "best_energy": -1.9936328644201478,
+          "best_abs_error": 0.0025174610986606893,
           "chemical_acc": false,
           "nit": 2000,
           "success": false,
           "message": "Maximum number of iterations has been exceeded.",
           "use_bs": false
         },
+        "9": {
+          "source_file": "data/results/h4_hybrid_L9_nobs_r0150.json",
+          "n_params": 386,
+          "best_energy": -1.994853332165505,
+          "best_abs_error": 0.0012969933532989142,
+          "chemical_acc": true,
+          "nit": 2000,
+          "success": false,
+          "message": "Maximum number of iterations has been exceeded.",
+          "use_bs": false
+        }
+      },
+      "min_chem_L": 9,
+      "max_fail_L": 8,
+      "min_chem_resolved": true,
+      "min_chem_err_mHa": 1.2969933532989142
+    },
+    "2.00": {
+      "layers": {
+        "10": {
+          "source_file": "data/results/h4_hybrid_L10_nobs_r0200.json",
+          "n_params": 428,
+          "best_energy": -1.8933843835772164,
+          "best_abs_error": 0.004396262412659668,
+          "chemical_acc": false,
+          "nit": 2000,
+          "success": false,
+          "message": "Maximum number of iterations has been exceeded.",
+          "use_bs": false
+        },
+        "11": {
+          "source_file": "data/results/h4_hybrid_L11_nobs_r0200.json",
+          "n_params": 470,
+          "best_energy": -1.8963265797034863,
+          "best_abs_error": 0.0014540662863868903,
+          "chemical_acc": true,
+          "nit": 2000,
+          "success": false,
+          "message": "Maximum number of iterations has been exceeded.",
+          "use_bs": false
+        }
+      },
+      "min_chem_L": 11,
+      "max_fail_L": 10,
+      "min_chem_resolved": true,
+      "min_chem_err_mHa": 1.4540662863868903
+    },
+    "2.50": {
+      "layers": {
         "10": {
           "source_file": "data/results/h4_hybrid_L10_nobs_r250.json",
           "n_params": 428,
@@ -91,8 +416,34 @@
           "success": false,
           "message": "Maximum number of iterations has been exceeded.",
           "use_bs": false
+        },
+        "5": {
+          "source_file": "data/results/h4_hybrid_L5_nobs_r250.json",
+          "n_params": 218,
+          "best_energy": -1.8680356592747756,
+          "best_abs_error": 0.00418033514933569,
+          "chemical_acc": false,
+          "nit": 206,
+          "success": false,
+          "message": "Desired error not necessarily achieved due to precision loss.",
+          "use_bs": false
+        },
+        "8": {
+          "source_file": "data/results/h4_hybrid_L8_nobs_r250.json",
+          "n_params": 344,
+          "best_energy": -1.869584008854518,
+          "best_abs_error": 0.0026319855695990935,
+          "chemical_acc": false,
+          "nit": 2000,
+          "success": false,
+          "message": "Maximum number of iterations has been exceeded.",
+          "use_bs": false
         }
-      }
+      },
+      "min_chem_L": 11,
+      "max_fail_L": 10,
+      "min_chem_resolved": true,
+      "min_chem_err_mHa": 1.4978593226804282
     }
   }
 }

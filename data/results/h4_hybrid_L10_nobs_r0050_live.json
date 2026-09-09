@@ -1,0 +1,18 @@
+{
+  "t": "2026-09-08T13:49:19",
+  "elapsed_s": 3612.4987246990204,
+  "iter": 1999,
+  "maxiter": 2000,
+  "remaining": 1,
+  "energy": -1.6530155309925854,
+  "nfev": 2093,
+  "script": "h4_hybrid",
+  "r": 0.5,
+  "n_layers": 10,
+  "seed": 0,
+  "n_params": 428,
+  "use_bs": false,
+  "done": true,
+  "success": false,
+  "message": "Desired error not necessarily achieved due to precision loss."
+}

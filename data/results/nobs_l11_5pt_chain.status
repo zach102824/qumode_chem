@@ -1,0 +1,11 @@
+2026-09-08T08:17:19Z 5-pt chain: --no-bs L=11 bonds 0.50 1.50 2.00 (reuse 0.88 2.50)
+2026-09-08T08:17:19Z starting --no-bs L=11 --bonds 0.50 -> data/results/h4_hybrid_L11_nobs_r0050.json
+2026-09-08T08:17:19Z started R=0.50 pid=3102074
+2026-09-08T09:19:50Z finished R=0.50 ok (rc=0)
+2026-09-08T09:19:50Z starting --no-bs L=11 --bonds 1.50 -> data/results/h4_hybrid_L11_nobs_r0150.json
+2026-09-08T09:19:50Z started R=1.50 pid=3117756
+2026-09-08T10:25:20Z finished R=1.50 ok (rc=0)
+2026-09-08T10:25:20Z starting --no-bs L=11 --bonds 2.00 -> data/results/h4_hybrid_L11_nobs_r0200.json
+2026-09-08T10:25:20Z started R=2.00 pid=3130999
+2026-09-08T11:30:20Z finished R=2.00 ok (rc=0)
+2026-09-08T11:30:20Z 5-pt chain complete

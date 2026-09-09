@@ -1,0 +1,18 @@
+{
+  "t": "2026-09-08T19:27:02",
+  "elapsed_s": 2296.879030227661,
+  "iter": 2000,
+  "maxiter": 2000,
+  "remaining": 0,
+  "energy": -1.9936328644201478,
+  "nfev": 2003,
+  "script": "h4_hybrid",
+  "r": 1.5,
+  "n_layers": 8,
+  "seed": 0,
+  "n_params": 344,
+  "use_bs": false,
+  "done": true,
+  "success": false,
+  "message": "Maximum number of iterations has been exceeded."
+}

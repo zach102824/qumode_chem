@@ -1,0 +1,52 @@
+2026-09-08T12:50:36Z until-11am planner start; deadline=2026-09-09T11:00:00+08:00
+2026-09-08T12:50:36Z L11 5pt chain settled; starting until-11am planner
+2026-09-08T12:50:36Z ADOPT R=0.50 L=10 pid=3155534 -> h4_hybrid_L10_nobs_r0050.json
+2026-09-08T13:49:36Z DONE R=0.50 L=10 rc=adopted
+2026-09-08T13:49:36Z START R=0.50 L=9 -> h4_hybrid_L9_nobs_r0050.json
+2026-09-08T14:31:41Z DONE R=0.50 L=9 rc=0
+2026-09-08T14:31:42Z START R=0.50 L=8 -> h4_hybrid_L8_nobs_r0050.json
+2026-09-08T15:11:04Z DONE R=0.50 L=8 rc=0
+2026-09-08T15:11:04Z START R=0.50 L=7 -> h4_hybrid_L7_nobs_r0050.json
+2026-09-08T15:42:14Z DONE R=0.50 L=7 rc=0
+2026-09-08T15:42:14Z START R=0.50 L=6 -> h4_hybrid_L6_nobs_r0050.json
+2026-09-08T16:06:09Z DONE R=0.50 L=6 rc=0
+2026-09-08T16:06:09Z START R=0.88 L=6 -> h4_hybrid_L6_nobs_r0088.json
+2026-09-08T16:29:16Z DONE R=0.88 L=6 rc=0
+2026-09-08T16:29:16Z START R=0.88 L=7 -> h4_hybrid_L7_nobs_r0088.json
+2026-09-08T16:59:41Z DONE R=0.88 L=7 rc=0
+2026-09-08T16:59:41Z START R=1.50 L=10 -> h4_hybrid_L10_nobs_r0150.json
+2026-09-08T17:59:47Z DONE R=1.50 L=10 rc=0
+2026-09-08T17:59:47Z START R=1.50 L=9 -> h4_hybrid_L9_nobs_r0150.json
+2026-09-08T18:48:41Z DONE R=1.50 L=9 rc=0
+2026-09-08T18:48:41Z START R=1.50 L=8 -> h4_hybrid_L8_nobs_r0150.json
+2026-09-08T19:27:07Z DONE R=1.50 L=8 rc=0
+2026-09-08T19:27:07Z START R=2.00 L=10 -> h4_hybrid_L10_nobs_r0200.json
+2026-09-08T20:28:31Z DONE R=2.00 L=10 rc=0
+2026-09-08T20:28:31Z START R=0.70 L=11 -> h4_hybrid_L11_nobs_r0070.json
+2026-09-08T21:15:05Z DONE R=0.70 L=11 rc=0
+2026-09-08T21:15:05Z START R=0.70 L=10 -> h4_hybrid_L10_nobs_r0070.json
+2026-09-08T22:15:58Z DONE R=0.70 L=10 rc=0
+2026-09-08T22:15:58Z START R=0.70 L=9 -> h4_hybrid_L9_nobs_r0070.json
+2026-09-08T23:09:56Z DONE R=0.70 L=9 rc=0
+2026-09-08T23:09:56Z START R=0.70 L=8 -> h4_hybrid_L8_nobs_r0070.json
+2026-09-08T23:49:25Z DONE R=0.70 L=8 rc=0
+2026-09-08T23:49:25Z START R=0.70 L=7 -> h4_hybrid_L7_nobs_r0070.json
+2026-09-09T00:19:43Z DONE R=0.70 L=7 rc=0
+2026-09-09T00:19:43Z START R=0.70 L=6 -> h4_hybrid_L6_nobs_r0070.json
+2026-09-09T00:43:07Z DONE R=0.70 L=6 rc=0
+2026-09-09T00:43:07Z START R=1.00 L=11 -> h4_hybrid_L11_nobs_r0100.json
+2026-09-09T01:51:44Z DONE R=1.00 L=11 rc=0
+2026-09-09T01:51:44Z START R=1.00 L=10 -> h4_hybrid_L10_nobs_r0100.json
+2026-09-09T02:46:59Z DONE R=1.00 L=10 rc=0
+2026-09-09T02:46:59Z START R=1.00 L=9 -> h4_hybrid_L9_nobs_r0100.json
+2026-09-09T03:30:13Z DONE R=1.00 L=9 rc=0
+2026-09-09T03:30:13Z launch cutoff reached (2026-09-09T11:30:13.573673+08:00); stop starting new jobs
+2026-09-09T03:30:13Z === summary min-L ===
+2026-09-09T03:30:13Z R=0.50 min_chem_L=7 max_fail_L=6 resolved=True
+2026-09-09T03:30:13Z R=0.70 min_chem_L=7 max_fail_L=6 resolved=True
+2026-09-09T03:30:13Z R=0.88 min_chem_L=7 max_fail_L=6 resolved=True
+2026-09-09T03:30:13Z R=1.00 min_chem_L=9 max_fail_L=None resolved=False
+2026-09-09T03:30:13Z R=1.50 min_chem_L=9 max_fail_L=8 resolved=True
+2026-09-09T03:30:13Z R=2.00 min_chem_L=11 max_fail_L=10 resolved=True
+2026-09-09T03:30:13Z R=2.50 min_chem_L=11 max_fail_L=10 resolved=True
+2026-09-09T03:30:13Z planner exit
